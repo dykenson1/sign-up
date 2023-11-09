@@ -59,6 +59,7 @@ form{
     padding-top: 5px;
     padding-bottom: 5px;
     color: var(--color);
+    box-shadow: 12px 12px 22px rgba(38, 38, 38, 0.882);
 }
 .form-space h3{
     margin: 0 125px;
@@ -79,6 +80,12 @@ label{
     font-size: 12px;
     letter-spacing: 2px;
 }
+input:valid{
+    border: 1px solid green;
+}
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
 input{
     background-color: transparent;
     border: 1px solid var(--color);
@@ -87,8 +94,13 @@ input{
     color: var(--color);
     letter-spacing: 1.5px;
     padding-left: 10px;
+    box-shadow: 2px 1px 5px rgba(139, 139, 139, 0.2);
 
 }
+input:focus{
+    border: 1px solid var(--color);
+}
+
 
 
 button{
@@ -102,6 +114,9 @@ button{
     color: var(--color);
     border-radius: 0.3em;
     cursor: pointer;
+}
+button:hover{
+    box-shadow: 12px 12px 26px rgba(38, 38, 38, 0.882);
 }
 
 .login{
