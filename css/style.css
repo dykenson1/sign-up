@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --color:#c4c4c4;
+    --bg-color:rgb(5, 16, 29);
+    
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* partie contenant l'image */
+.image-fond{
+    background-image: url("/image/tesla.jpg");
+    width: 30%;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.image-fond > h1{
+    margin: auto 45px;
+    margin-top: 540px;
+    color: var(--color);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+
+/* partie contenant le fromulaire */
+.form-right{
+    background-color: var(--color);
+    width: 100%;
+    padding-top: 100px;  
+}
+.form-right > p{
+    margin-left: 125px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: var(--bg-color);
+    font-weight: 350;
+    
+
+}
+form{
+    margin-top: 80px;
+}
+.form-space{
+    
+    background-color:var(--bg-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: var(--color);
+}
+.form-space h3{
+    margin: 0 125px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    
+}
+.form-space .t1{
+    display: flex;
+}
+.form-space .t1 p{
+    margin-left: 125px;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+input{
+    background-color: transparent;
+    border: 1px solid var(--color);
+    padding: 3px;
+    border-radius: 0.3em;
+    color: var(--color);
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+
+}
+
+
+button{
+    margin-left: 125px;
+    margin-top: 25px;
+    font-size: 1em;
+    padding: 6px 25px;
+    letter-spacing: 1.4px;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--color);
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.login{
+    margin-left: 125px;
+    color: var(--bg-color);
+}
+a{
+    color: var(--bg-color);
+    text-transform: capitalize;
+    margin-left: 2px;
+}
+
+@media (max-width:750px) {
+    main{
+        flex-direction: column;
+    }
+    .image-fond{
+        
+        width: 100%;
+        background-size:cover;
+       
+    
+    }
+    .image-fond > h1{
+        margin: auto 45px;
+        margin-top: 240px;
+        margin-bottom: 700px;
+        font-size: 3.5rem;
+        
+    }
+}
+
+@media (max-width:350px) {
+    main{
+        flex-direction: column;
+    }
+    .image-fond{
+        background-image: url("/image/tesla.jpg");
+        width: 100%;
+        background-size:contain;
+        background-repeat: no-repeat;
+    
+    }
+    .image-fond > h1{
+        margin-top: 440px;
+        margin-bottom:70px;
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+    .form-space .t1{
+        flex-direction: column;
+        
+    }
+    .form-space .t1 p{
+        margin-left:50px;
+    }
+    button,.login{
+        margin-left: 50px;
+    }
+    .form-space h3{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .form-right > p{
+        margin-left: 50px;
+        font-size: 20px;
+        
+        font-weight: 350;
+        
+    
+    }
+    
+}
+
+
