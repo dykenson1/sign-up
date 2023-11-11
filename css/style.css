@@ -136,33 +136,14 @@ a{
     margin-left: 2px;
 }
 
-@media (max-width:750px) {
+
+@media (max-width:440px) {
     main{
         flex-direction: column;
     }
     .image-fond{
-        
         width: 100%;
         background-size:cover;
-       
-    
-    }
-    .image-fond > h1{
-        margin: auto 45px;
-        margin-top: 240px;
-        margin-bottom: 700px;
-        font-size: 3.5rem;
-        
-    }
-}
-
-@media (max-width:350px) {
-    main{
-        flex-direction: column;
-    }
-    .image-fond{
-        width: 100%;
-        background-size:contain;
         background-repeat: no-repeat;
     
     }
