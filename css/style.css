@@ -144,6 +144,7 @@ a{
     .image-fond{
         width: 100%;
         background-size:cover;
+        background-position-y: -130px;
         background-repeat: no-repeat;
     
     }
@@ -151,22 +152,38 @@ a{
         margin-top: 440px;
         margin-bottom:70px;
         font-size: 2.5rem;
-        text-align: center;
+        margin-left: 70px;
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .form-space{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+        padding: 15px;
         
     }
     .form-space .t1{
+        display: flex;
         flex-direction: column;
-        
     }
     .form-space .t1 p{
         margin-left:50px;
     }
     button,.login{
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .form-space h3{
         font-size: 18px;
-        margin-left: 50px;
+        margin-left: 70px;
+        text-align: center;
     }
     .form-right > p{
         margin-left: 50px;
